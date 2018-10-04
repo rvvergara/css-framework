@@ -28,6 +28,9 @@ ul.nav-ul,
   display: none;
 }
 
+.active {
+  color: #3498db;
+}
 .hamburger {
   @include fitcontent();
   @include linkpadding();
@@ -51,9 +54,10 @@ ul.nav-ul,
     @include fitcontent();
     @include linkpadding();
 
-    .box {
+    .input-box {
       padding: 5px;
       border-radius: 3px;
+      border: 1px solid #bdc3c7;
     }
   }
 
