@@ -260,19 +260,35 @@ p {
   color: #444;
 }
 
-button {
+.button {
   background: none;
   border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  margin: 20px;
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 3px rgba(0, 0, 0, 0.75);
 }
 
-button:focus,
-button:active {
+.button:active {
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 3px rgba(0, 0, 0, 0.75);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.button:focus,
+.button:active {
   outline: none;
 }
 
 .big {
-  font-size: 1.25rem;
-  height: 3rem;
+  width: 20%;
 }
 
 .small {
@@ -284,13 +300,23 @@ button:active {
   background: #95a5a6;
   background: -webkit-gradient(linear, left top, right top, from(#95a5a6), color-stop(50%, #bdc3c7), to(#95a5a6));
   background: linear-gradient(90deg, #95a5a6 0%, #bdc3c7 50%, #95a5a6 100%);
-  color: #fff;
 }
 
 .primary {
   background: #2980b9;
   background: -webkit-gradient(linear, left top, right top, from(#2980b9), color-stop(50%, #3498db), to(#2980b9));
   background: linear-gradient(90deg, #2980b9 0%, #3498db 50%, #2980b9 100%);
-  color: #fff;
+}
+
+.dark {
+  background: #2c3e50;
+  background: -webkit-gradient(linear, left top, right top, from(#2c3e50), color-stop(50%, #34495e), to(#2c3e50));
+  background: linear-gradient(90deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+}
+
+.danger {
+  background: #c0392b;
+  background: -webkit-gradient(linear, left top, right top, from(#c0392b), color-stop(50%, #e74c3c), to(#c0392b));
+  background: linear-gradient(90deg, #c0392b 0%, #e74c3c 50%, #c0392b 100%);
 }
 /*# sourceMappingURL=sneakerstrap.css.map */
