@@ -1,3 +1,54 @@
 // General font styles for elements
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Roboto:400,700');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Roboto:400,700");
+
+@mixin p-style {
+  font: {
+    size: 1rem;
+    family: "Lato", sans-serif;
+  }
+  line-height: 18px;
+  color: #444;
+}
+@mixin bold-style {
+  font: {
+    family: "Roboto", sans-serif;
+    weight: 700;
+  }
+  line-height: 1.1em;
+  color: #111;
+}
+// 2rem , 1.5rem, 1.17rem, 1rem, .83rem, .67rem
+h1 {
+  font-size: 2rem;
+  @include bold-style;
+}
+h2 {
+  font-size: 1.5rem;
+  @include bold-style;
+}
+h3 {
+  font-size: 1.17rem;
+  @include bold-style;
+}
+h4 {
+  font-size: 1rem;
+  @include bold-style;
+}
+h5 {
+  font-size: 0.83rem;
+  @include bold-style;
+}
+h6 {
+  font-size: 0.67rem;
+  @include bold-style;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  @include p-style;
+}
