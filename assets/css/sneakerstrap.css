@@ -250,4 +250,34 @@ p {
   color: #444;
 }
 
+button {
+  background: none;
+  border-radius: 5px;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.big {
+  font-size: 1.25rem;
+  height: 3rem;
+}
+
+.small {
+  font-size: 0.85rem;
+  height: 1.5rem;
+}
+
+.default {
+  background: #999;
+  color: #fff;
+}
+
+.primary {
+  background: #062f4f;
+  color: #fff;
+}
+
 /*# sourceMappingURL=sneakerstrap.css.map */

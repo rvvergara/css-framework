@@ -1,0 +1,47 @@
+// Buttons styles
+
+// Removing default button styles
+button {
+    background: none;
+    border-radius: 5px;
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+// Color schemes:
+
+$default-color: #999;
+$primary-color: #062f4f;
+
+
+// Button sizes
+@mixin big-size {
+    font-size: 1.25rem;
+    height: 3rem;
+}
+
+@mixin small-size {
+    font-size: 0.85rem;
+    height: 1.5rem;
+}
+
+.big {
+    @include big-size();
+}
+
+.small {
+    @include small-size();
+}
+
+.default {
+    background: $default-color;
+    color: #fff;
+}
+
+.primary {
+    background: $primary-color;
+    color: #fff;
+}
