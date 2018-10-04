@@ -3,6 +3,8 @@
 Inspired by https://github.com/shahbokhari/webdev/blob/master/The%20Grid/12-column-grid-template-1.html
 
 We replaced tables with flexbox and also used variables, functions and mixins
+
+Full responsive grid layout.
 ===========================================
 */
 
@@ -47,7 +49,6 @@ $flex-basis: (1: (1/12 * 100%),
 }
 
 .row {
-    padding: $container-padding;
     display: flex;
     height: 100%;
     flex-wrap: wrap;
