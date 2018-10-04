@@ -1,0 +1,63 @@
+// Styles for navbars
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@mixin fitcontent {
+    height: fit-content;
+}
+
+@mixin linkpadding {
+    padding: 15px;
+}
+
+@mixin push-right {
+    margin-left: auto;
+}
+
+.navbar {
+    display: flex;
+}
+
+.brand {
+    @include fitcontent();
+    @include linkpadding();
+}
+
+ul.nav-ul,
+.nav-search {
+    display: none;
+}
+
+.hamburger {
+    @include fitcontent();
+    @include linkpadding();
+    @include push-right();
+}
+
+@media screen and (min-width:768px) {
+    ul.nav-ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            list-style: none;
+            margin: 0 10px;
+        }
+    }
+
+    form.nav-search {
+        display: block;
+        @include push-right();
+        @include fitcontent();
+        @include linkpadding();
+
+        input {
+            padding: 5px;
+            border-radius: 3px;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
