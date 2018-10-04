@@ -2,46 +2,88 @@
 
 // Removing default button styles
 button {
-    background: none;
-    border-radius: 5px;
+  background: none;
+  border-radius: 5px;
 }
 
 button:focus,
 button:active {
-    outline: none;
+  outline: none;
 }
 
 // Color schemes:
 
 $default-color: #999;
 $primary-color: #062f4f;
-
+$primary-color: #062f4f;
+$primary-color: #062f4f;
 
 // Button sizes
 @mixin big-size {
-    font-size: 1.25rem;
-    height: 3rem;
+  font-size: 1.25rem;
+  height: 3rem;
 }
 
 @mixin small-size {
-    font-size: 0.85rem;
-    height: 1.5rem;
+  font-size: 0.85rem;
+  height: 1.5rem;
+}
+@mixin btn-default {
+  background: rgb(149, 165, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(149, 165, 166, 1) 0%,
+    rgba(189, 195, 199, 1) 50%,
+    rgba(149, 165, 166, 1) 100%
+  );
+}
+
+@mixin btn-primary {
+  background: rgb(41, 128, 185);
+  background: linear-gradient(
+    90deg,
+    rgba(41, 128, 185, 1) 0%,
+    rgba(52, 152, 219, 1) 50%,
+    rgba(41, 128, 185, 1) 100%
+  );
+}
+
+@mixin btn-dark {
+  background: rgb(44, 62, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 73, 94, 1) 50%,
+    rgba(44, 62, 80, 1) 100%
+  );
+}
+
+@mixin btn-danger {
+  background: rgb(192, 57, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(192, 57, 43, 1) 0%,
+    rgba(231, 76, 60, 1) 50%,
+    rgba(192, 57, 43, 1) 100%
+  );
 }
 
 .big {
-    @include big-size();
+  @include big-size();
 }
 
 .small {
-    @include small-size();
+  @include small-size();
 }
 
 .default {
-    background: $default-color;
-    color: #fff;
+  //   background: $default-color;
+  @include btn-default;
+  color: #fff;
 }
 
 .primary {
-    background: $primary-color;
-    color: #fff;
+  @include btn-primary;
+  //   background: $primary-color;
+  color: #fff;
 }
