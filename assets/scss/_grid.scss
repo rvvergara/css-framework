@@ -6,7 +6,6 @@ We replaced tables with flexbox
 ===========================================
 */
 
-
 $side-gutter: 20px;
 $container-padding: 0 $side-gutter;
 $mobile: 320px;
@@ -14,190 +13,231 @@ $tablet: 640px;
 $minilaptop: 960px;
 $biglaptop: 1200px;
 
+$flex-basis: (
+  1: (
+    1/12 * 100%
+  ),
+  2: (
+    2/12 * 100%
+  ),
+  3: (
+    3/12 * 100%
+  ),
+  4: (
+    4/12 * 100%
+  ),
+  5: (
+    5/12 * 100%
+  ),
+  6: (
+    6/12 * 100%
+  ),
+  7: (
+    7/12 * 100%
+  ),
+  8: (
+    8/12 * 100%
+  ),
+  9: (
+    9/12 * 100%
+  ),
+  10: (
+    10/12 * 100%
+  ),
+  11: (
+    11/12 * 100%
+  ),
+  12: (
+    12/12 * 100%
+  )
+);
 
+@function width($num) {
+  @return map-get($flex-basis, $num);
+}
 @mixin media-querry($size) {
-    @media screen and (min-width:#{$size}) {
-        @content;
-    }
+  @media screen and (min-width:#{$size}) {
+    @content;
+  }
+}
+@mixin flex-basis($num) {
+  flex-basis: width($num);
 }
 
 .container {
-    padding: $container-padding;
-    height: 100%;
-    background: #9b59b6;
+  padding: $container-padding;
+  height: 100%;
+  background: #9b59b6;
 }
 
 .row {
-    padding: $container-padding;
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
+  padding: $container-padding;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
 [class*="col-"] {
-    width: 100%;
-    min-height: 1px;
+  width: 100%;
+  min-height: 1px;
 }
 
 .col {
-    padding: 1em;
-    margin: 8px;
-    background: #e74c3c;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    text-align: center;
+  padding: 1em;
+  margin: 8px;
+  background: #e74c3c;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
 }
 
-
-
 @include media-querry($mobile) {
-    .col-wd-1 {
-        flex-basis: (1/12 * 100%);
-    }
+  .col-lg-1 {
+    @include flex-basis(1);
+  }
 
-    .col-wd-2 {
-        flex-basis: (2/12 * 100%);
-    }
+  .col-lg-2 {
+    @include flex-basis(2);
+  }
 
-    .col-wd-3 {
-        flex-basis: (3/12 * 100%);
-    }
+  .col-lg-3 {
+    @include flex-basis(3);
+  }
 
-    .col-wd-4 {
-        flex-basis: (4/12 * 100%);
-    }
+  .col-lg-4 {
+    @include flex-basis(4);
+  }
 
-    .col-wd-5 {
-        flex-basis: (5/12 * 100%);
-    }
+  .col-lg-5 {
+    @include flex-basis(5);
+  }
 
-    .col-wd-6 {
-        flex-basis: (6/12 * 100%);
-    }
+  .col-lg-6 {
+    @include flex-basis(6);
+  }
 
-    .col-wd-7 {
-        flex-basis: (7/12 * 100%);
-    }
+  .col-lg-7 {
+    @include flex-basis(7);
+  }
 
-    .col-wd-8 {
-        flex-basis: (8/12 * 100%);
-    }
+  .col-lg-8 {
+    @include flex-basis(8);
+  }
 
-    .col-wd-9 {
-        flex-basis: (10/12 * 100%);
-    }
+  .col-lg-9 {
+    @include flex-basis(9);
+  }
 
-    .col-wd-10 {
-        flex-basis: (11/12 * 100%);
-    }
+  .col-lg-10 {
+    @include flex-basis(10);
+  }
 
-    .col-wd-11 {
-        flex-basis: (12/12 * 100%);
-    }
+  .col-lg-11 {
+    @include flex-basis(11);
+  }
 
-    .col-wd-12 {
-        flex-basis: 100%;
-    }
+  .col-lg-12 {
+    @include flex-basis(12);
+  }
 }
 
 @include media-querry($tablet) {
-    .col-md-1 {
-        flex-basis: (1/12 * 100%);
-    }
+  .col-md-1 {
+    @include flex-basis(1);
+  }
 
-    .col-md-2 {
-        flex-basis: (2/12 * 100%);
-    }
+  .col-md-2 {
+    @include flex-basis(2);
+  }
 
-    .col-md-3 {
-        flex-basis: (3/12 * 100%);
-    }
+  .col-md-3 {
+    @include flex-basis(3);
+  }
 
-    .col-md-4 {
-        flex-basis: (4/12 * 100%);
-    }
+  .col-md-4 {
+    @include flex-basis(4);
+  }
 
-    .col-md-5 {
-        flex-basis: (5/12 * 100%);
-    }
+  .col-md-5 {
+    @include flex-basis(5);
+  }
 
-    .col-md-6 {
-        flex-basis: (6/12 * 100%);
-    }
+  .col-md-6 {
+    @include flex-basis(6);
+  }
 
-    .col-md-7 {
-        flex-basis: (7/12 * 100%);
-    }
+  .col-md-7 {
+    @include flex-basis(7);
+  }
 
-    .col-md-8 {
-        flex-basis: (8/12 * 100%);
-    }
+  .col-md-8 {
+    @include flex-basis(8);
+  }
 
-    .col-md-9 {
-        flex-basis: (10/12 * 100%);
-    }
+  .col-md-9 {
+    @include flex-basis(9);
+  }
 
-    .col-md-10 {
-        flex-basis: (11/12 * 100%);
-    }
+  .col-md-10 {
+    @include flex-basis(10);
+  }
 
-    .col-md-11 {
-        flex-basis: (12/12 * 100%);
-    }
+  .col-md-11 {
+    @include flex-basis(11);
+  }
 
-    .col-md-12 {
-        flex-basis: 100%;
-    }
-
+  .col-md-12 {
+    @include flex-basis(12);
+  }
 }
 
 @include media-querry($minilaptop) {
-    .col-sm-1 {
-        flex-basis: (1/12 * 100%);
-    }
+  .col-sm-1 {
+    @include flex-basis(1);
+  }
 
-    .col-sm-2 {
-        flex-basis: (2/12 * 100%);
-    }
+  .col-sm-2 {
+    @include flex-basis(2);
+  }
 
-    .col-sm-3 {
-        flex-basis: (3/12 * 100%);
-    }
+  .col-sm-3 {
+    @include flex-basis(3);
+  }
 
-    .col-sm-4 {
-        flex-basis: (4/12 * 100%);
-    }
+  .col-sm-4 {
+    @include flex-basis(4);
+  }
 
-    .col-sm-5 {
-        flex-basis: (5/12 * 100%);
-    }
+  .col-sm-5 {
+    @include flex-basis(5);
+  }
 
-    .col-sm-6 {
-        flex-basis: (6/12 * 100%);
-    }
+  .col-sm-6 {
+    @include flex-basis(6);
+  }
 
-    .col-sm-7 {
-        flex-basis: (7/12 * 100%);
-    }
+  .col-sm-7 {
+    @include flex-basis(7);
+  }
 
-    .col-sm-8 {
-        flex-basis: (8/12 * 100%);
-    }
+  .col-sm-8 {
+    @include flex-basis(8);
+  }
 
-    .col-sm-9 {
-        flex-basis: (10/12 * 100%);
-    }
+  .col-sm-9 {
+    @include flex-basis(9);
+  }
 
-    .col-sm-10 {
-        flex-basis: (11/12 * 100%);
-    }
+  .col-sm-10 {
+    @include flex-basis(10);
+  }
 
-    .col-sm-11 {
-        flex-basis: (12/12 * 100%);
-    }
+  .col-sm-11 {
+    @include flex-basis(11);
+  }
 
-    .col-sm-12 {
-        flex-basis: 100%;
-    }
+  .col-sm-12 {
+    @include flex-basis(12);
+  }
 }
