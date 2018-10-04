@@ -1,3 +1,15 @@
+/*CSS Grid by Ryan and Dipto GNU License 2018*/
+.container {
+  padding: 0 20px;
+  border: 1px solid black;
+  height: 500px;
+  background: yellow; }
 
+.row {
+  padding: 0 20px;
+  display: flex;
+  border: 1px solid black;
+  background: red;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
