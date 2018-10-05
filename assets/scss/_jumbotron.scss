@@ -1,1 +1,31 @@
 // Styles for the Jumbotron
+@mixin text-adjusts($size, $height) {
+    font-size: $size;
+    line-height: $height;
+}
+
+.jumbotron {
+    background: yellow;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+
+    .jumbotron-title {
+        @include text-adjusts(3rem, 3.1rem);
+    }
+
+    .jumbotron-subtitle {
+        @include text-adjusts(1.8rem, 2.2rem);
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.4);
+    }
+
+    .jumbotron-text {
+        @include text-adjusts(1.3rem, 1.5rem);
+    }
+
+    .container {
+        background: none;
+    }
+
+}
