@@ -1,6 +1,6 @@
-<h1>CSS Frameworks Project</h1>
+# CSS Frameworks Project
 
-<p>by: <a href="https://github.com/rvvergara">Ryan</a> and <a href="https://github.com/dipto0321">Dipto</a></p>
+by: [Ryan](https://github.com/rvvergara) and [Dipto](https://github.com/dipto0321)
 
 <h2>Presenting <em>SneakerStrap</em></h2>
 
