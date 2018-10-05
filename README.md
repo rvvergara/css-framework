@@ -19,4 +19,4 @@ by: [Ryan](https://github.com/rvvergara) and [Dipto](https://github.com/dipto032
     </li>
 </ol>
 
-<h3><a href="https://cdn.rawgit.com/rvvergara/css-framework/95edba80/index.html">Live Demo Of the Framework</a></h3>
+<h3><a href="https://rawgit.com/rvvergara/css-framework/master/index.html">Live Demo Of the Framework</a></h3>
