@@ -2,21 +2,23 @@
 
 by: [Ryan](https://github.com/rvvergara) and [Dipto](https://github.com/dipto0321)
 
-<h2>Presenting <em>SneakerStrap</em></h2>
+## Presenting _SneakerStrap_
 
 <p>It's a CSS framework created through SASS.</p>
 
-<h2>How To Install</h2>
+## How To Install
 
-<ol>
-    <li>Choose between sneakerstrap.css or sneakerstrap.min.css</li>
-    <li>Include this line in your main hthml file (i.e. index.html):
-        <pre>
-            <code>
-                &ltlink rel="stylesheet" href="[directory for sneakerstrap]/sneakerstrap.css [or sneakerstrap.min.css]"&gt
-            </code>
-        </pre>
-    </li>
-</ol>
+1. Choose between sneakerstrap.css or sneakerstrap.min.css
+2. Include this line in the `<head>` section your main hthml file (i.e. index.html):
 
-<h3><a href="https://cdn.rawgit.com/rvvergara/css-framework/95edba80/index.html">Live Demo Of the Framework</a></h3>
+   `<link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.css>`
+
+   or
+
+   `<link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.min.css>`
+
+[Live Demo Of the Framework]("https://cdn.rawgit.com/rvvergara/css-framework/95edba80/index.html")
+
+## Usage
+
+Coming soon
