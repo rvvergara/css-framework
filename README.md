@@ -11,11 +11,15 @@ by: [Ryan](https://github.com/rvvergara) and [Dipto](https://github.com/dipto032
 1. Choose between sneakerstrap.css or sneakerstrap.min.css
 2. Include this line in the `<head>` section your main hthml file (i.e. index.html):
 
-   `<link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.css>`
+   ```html
+   <link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.css>
+   ```
 
    or
 
-   `<link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.min.css>`
+   ```html
+   <link rel="stylesheet" href="<directory for sneakerstrap>/sneakerstrap.min.css>
+   ```
 
 [Live Demo Of the Framework]("https://cdn.rawgit.com/rvvergara/css-framework/95edba80/index.html")
 
